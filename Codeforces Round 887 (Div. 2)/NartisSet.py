@@ -24,4 +24,5 @@ def invr():
 if __name__ == "__main__":
     num_tests = inp()
     for i in range(num_tests):
+
         break
