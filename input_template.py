@@ -1,4 +1,5 @@
 import sys
+import math
 
 input = sys.stdin.readline
 
@@ -20,8 +21,14 @@ def insr():
 def invr():
     return map(int, input().split())
 
+def solve():
+    return
+
 
 if __name__ == "__main__":
+    tests = []
     num_tests = inp()
     for i in range(num_tests):
-        break
+        continue
+    for test in tests:
+        print(solve())
