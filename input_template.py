@@ -31,4 +31,4 @@ if __name__ == "__main__":
     for i in range(num_tests):
         continue
     for test in tests:
-        print(solve())
+        print(solve(test))
