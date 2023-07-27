@@ -22,14 +22,19 @@ def invr():
     return map(int, input().split())
 
 def solve(test):
-    return
+    b,c,h = test
+    fill = c + h
+    if fill - 1 > b - 2 :
+        return 2 + (2 * (b - 2)) + 1
+    else: 
+        return 2 + ( 2 * fill) - 1
 
 
 if __name__ == "__main__":
     tests = []
     num_tests = inp()
     for i in range(num_tests):
-        
+        tests.append(inlt())
         continue
     for test in tests:
         print(solve(test))
