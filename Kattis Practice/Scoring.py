@@ -22,13 +22,22 @@ def invr():
     return map(int, input().split())
 
 def solve(test):
+    # print(test)
+    ranking = {}
+    test = sorted(test, key=lambda x: (-x[1], x[2], x[3]))
+    for i in range(len(test)):
+        t = test[i]
+        ranking[t[0]] = i
+    print(test)
+
     return
+
 
 if __name__ == "__main__":
     tests = []
-    num_tests = inp()
-    for i in range(num_tests):
-        
-        continue
-    for test in tests:
-        print(solve(test))
+    num_contest = inp()
+    contestants = []
+    
+    for i in range(num_contest):
+        contestants.append([i] + inlt())
+    print(solve(contestants))

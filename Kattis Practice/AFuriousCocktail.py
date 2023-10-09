@@ -21,14 +21,21 @@ def insr():
 def invr():
     return map(int, input().split())
 
-def solve(test):
-    return
+def solve(pots, t):
+    pots = list(reversed(sorted(pots)))
+    for i in range(0, len(pots)):
+        
+        if pots[i] <= t *(len(pots) - (i + 1)):
+            # print(i, pots[i])
+            return "NO"
+    
+    return "YES"
+
 
 if __name__ == "__main__":
     tests = []
-    num_tests = inp()
-    for i in range(num_tests):
-        
-        continue
-    for test in tests:
-        print(solve(test))
+    N, T = inlt()
+    pots = []
+    for i in range(N):
+        pots.append(inp())
+    print(solve(pots, T))
